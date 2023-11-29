@@ -4,15 +4,14 @@ const { connect, KeyPair } = nearAPI;
 async function callContractMethod() {
     // 配置连接参数
     const config = {
-        networkId: "mainnet", // 或者 "testnet"
-        keyStore: new nearAPI.keyStores.InMemoryKeyStore(), // 键值存储方式
+        networkId: "mainnet"
+        keyStore: new nearAPI.keyStores.InMemoryKeyStore(), 
         nodeUrl: "----", // NEAR节点URL，去ankr获取 https://www.ankr.com/rpc/projects
         walletUrl: "https://wallet.near.org",
         helperUrl: "https://helper.mainnet.near.org",
         explorerUrl: "https://explorer.mainnet.near.org",
     };
 
-    // 连接到NEAR
     const near = await connect(config);
 
     // 配置账户和密钥
