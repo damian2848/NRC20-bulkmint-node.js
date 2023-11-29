@@ -23,7 +23,7 @@ async function callContractMethod() {
 
     const contractName = 'inscription.near';
     const methodName = 'inscribe';
-    const args = {
+    const args = {  //以下是铭文数据，自行修改，默认neat
         "p": "nrc-20",
         "op": "mint",
         "tick": "neat",
