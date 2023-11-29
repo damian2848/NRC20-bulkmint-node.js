@@ -4,7 +4,7 @@ const { connect, KeyPair } = nearAPI;
 async function callContractMethod() {
     // 配置连接参数
     const config = {
-        networkId: "mainnet"
+        networkId: "mainnet",
         keyStore: new nearAPI.keyStores.InMemoryKeyStore(), 
         nodeUrl: "----", // NEAR节点URL，去ankr获取 https://www.ankr.com/rpc/projects
         walletUrl: "https://wallet.near.org",
